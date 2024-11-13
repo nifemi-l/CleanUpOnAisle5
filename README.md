@@ -5,7 +5,7 @@ A simple Python script to clear files from a directory. It validates the directo
 ## Usage
 1. Run the script:
    ```bash
-   python clear_dir_script.py
+   python main.py
    ```
 2. Provide the directory path when prompted.
 
