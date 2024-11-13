@@ -1,6 +1,6 @@
 # Clear Directory Script
 
-A simple Python script to quickly clear files from a directory. It validates the directory path, skips `desktop.ini`, and logs deleted files. Made for quick personal use.
+A simple Python script to clear files from a directory. It validates the directory path, skips `desktop.ini`, and logs deleted files. Made for quick personal use.
 
 ## Usage
 1. Run the script:
