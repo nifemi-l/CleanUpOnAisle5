@@ -14,7 +14,7 @@ def clear_dir(directory):
     
     print("\n**WET FLOOR -- CAUTION**")
     for item in dir_path.iterdir(): 
-        if item.is_file() and item != 'desktop.ini':
+        if item.is_file() and item not in ('desktop.ini', '.DS_Store'):
             # delete the file 
             item.unlink()
             print(f"{item} was successfully deleted.\n")
