@@ -28,7 +28,18 @@ def clear_dir(directory):
     print(f"Process completed in {elapsed_time} seconds.")
 
 def main(): 
-    dir_input = input('Enter path to directory: ')    
-    clear_dir(dir_input)
-
+    while True: 
+        try:
+            dir_input = input("Enter path to directory\n(Enter 'e' to exit)\n: ").strip()
+            if not dir_input:
+                raise TypeError
+            if dir_input.lower() == 'e':
+                print('Goodbye!')
+                break
+            clear_dir(dir_input)
+            break
+        except TypeError: 
+            print("\nPath cannot be empty.\n")
+        except Exception as e:
+            print(f'\n{e}\n') 
 main()
