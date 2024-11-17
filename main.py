@@ -23,7 +23,7 @@ def clear_dir(directory):
     end_time = time.time()
 
     # get elapsed time
-    elapsed_time = round(end_time - start_time, 2)
+    elapsed_time = round(end_time - start_time, 4)
 
     print(f"Process completed in {elapsed_time} seconds.")
 
